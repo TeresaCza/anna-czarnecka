@@ -154,8 +154,13 @@ span, .arrow {
         height: 850px;
         margin: 0;
     }
-    .profile-card, .description, .arrow, .links {
+    .profile-card, .arrow, .links {
         width: 100%;
+    }
+    
+    .description {
+        width: 90%;
+        align-self: center;
     }
     
     .description {
