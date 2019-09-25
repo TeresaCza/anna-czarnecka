@@ -33,7 +33,7 @@ img {
 }
 
 .profile {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.9);
     box-shadow: 10px 10px 80px #666;
     max-width: 700px;
     width: 700px;
@@ -83,6 +83,11 @@ h1 {
     font-size: 2rem; 
     line-height: 1.5;
     margin: 10px
+}
+
+.about {
+    color: #114;
+    letter-spacing: 0.025rem;
 }
 
 span, .arrow {
