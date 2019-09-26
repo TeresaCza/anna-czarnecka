@@ -1,179 +1,204 @@
 /*CSS reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-size: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 100%;
 }
 
 /*General styles*/
 
 body {
-    background: url("neurons.jpg") no-repeat center center fixed;
-    background-size: cover;
-    color: #225;
-    font-family: 'Neuton', serif;
-    width: 100%;
-    height: 100%;    
+  background: url("neurons.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: #225;
+  font-family: 'Neuton', serif;
+  width: 100%;
+  height: 100%;
 }
 
 img {
-    width: 90%;
-    height: auto;
-    border-radius: 4px;
-    padding: 1px;
-    margin: 7px;
-    background-color: #666;
+  width: 90%;
+  height: auto;
+  border-radius: 4px;
+  padding: 1px;
+  margin: 7px;
+  background-color: #666;
 }
 
-.profile, .profile-card, .description, .arrow, .links {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.profile,
+.profile-card,
+.description,
+.arrow,
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .profile {
-    background-color: rgba(255, 255, 255, 0.9);
-    box-shadow: 10px 10px 80px #666;
-    max-width: 700px;
-    width: 700px;
-    height: 400px;
-    margin: 50px auto 50px 50px;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 10px 10px 80px #666;
+  max-width: 700px;
+  width: 700px;
+  height: 400px;
+  margin: 50px auto 50px 50px;
 }
 
-.profile-card, .description {
-    margin-top: 10px;
+.profile-card,
+.description {
+  margin-top: 10px;
 }
 
 .profile-card {
-    align-self: flex-start;
-    width: 43%;
-    flex-direction: column;
-    
+  align-self: flex-start;
+  width: 43%;
+  flex-direction: column;
+
 }
 
 .description {
-    align-self: flex-start;
-    width: 45%;
-    text-align: left;
+  align-self: flex-start;
+  width: 45%;
+  text-align: left;
 }
 
-.arrow, .links {
-    width: 6%;
+.arrow,
+.links {
+  width: 6%;
 }
 
 .arrow {
-    margin: 4px;
+  margin: 4px;
 }
 
 .fa-arrow-down {
-    display: none;
+  display: none;
 }
 
 /*Typography*/
 
-h2, p, span, i {    
-    font-size: 1.1rem;
-    line-height: 1.5;
-    margin: 4px;
+h2,
+p,
+span,
+i {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin: 4px;
 }
 
 h1 {
-    font-family: 'Lobster', cursive;
-    font-size: 2rem; 
-    line-height: 1.5;
-    margin: 10px
+  font-family: 'Lobster', cursive;
+  font-size: 2rem;
+  line-height: 1.5;
+  margin: 10px
 }
 
 .about {
-    color: #114;
-    letter-spacing: 0.025rem;
+  color: #114;
+  letter-spacing: 0.025rem;
 }
 
-span, .arrow {
-    color: #666;
+span,
+.arrow {
+  color: #666;
 }
 
 /*Links styles*/
 .links {
-    margin-right: 5px;
+  margin-right: 5px;
 }
-.links ul{
-    list-style-type: none;
+
+.links ul {
+  list-style-type: none;
 }
 
 .links i {
-    color: #225;
-    
+  color: #225;
+
 }
 
 .links i:hover {
-    color: #114;
+  color: #114;
 }
 
 /*Animacje*/
 
 .arrow {
-    animation: wink 2.5s infinite linear;
+  animation: wink 2.5s infinite linear;
 }
-@keyframes wink{
-    0% {
-        color: transparent;
-    }
-    15% {
-        color: transparent;
-    }
-    30% {
-        color: #666;
-    }
-    70% {
-        color: #666;
-    }
-    85% {
-        color: transparent;
-    }
-    100% {
-        color: transparent;
-    }
+
+@keyframes wink {
+  0% {
+    color: transparent;
+  }
+
+  15% {
+    color: transparent;
+  }
+
+  30% {
+    color: #666;
+  }
+
+  70% {
+    color: #666;
+  }
+
+  85% {
+    color: transparent;
+  }
+
+  100% {
+    color: transparent;
+  }
 }
 
 /*Media styles*/
 @media (max-width: 800px) {
-    body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .fa-arrow-right {
-        display: none;
-    }
-    
-    .fa-arrow-down {
-        display: block;
-    }
-    
-    .profile {
-        flex-direction: column;
-        width: 350px;
-        height: 850px;
-        margin: 0;
-    }
-    .profile-card, .arrow, .links {
-        width: 100%;
-    }
-    
-    .description {
-        width: 90%;
-        align-self: center;
-    }
-    
-    .description {
-        text-align: center;
-    }
-    
-    .links ul li {
-        display: inline-block;
-    }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .fa-arrow-right {
+    display: none;
+  }
+
+  .fa-arrow-down {
+    display: block;
+  }
+
+  .profile {
+    flex-direction: column;
+    width: 350px;
+    height: 850px;
+    margin: 0;
+  }
+
+  .profile-card,
+  .arrow,
+  .links {
+    width: 100%;
+  }
+
+  .description {
+    width: 90%;
+    align-self: center;
+  }
+
+  .description {
+    text-align: center;
+  }
+
+  .links ul li {
+    display: inline-block;
+  }
 }
 
+@media (max-width: 300px) {
+  .profile {
+    height: 1000px;
+  }
+}
